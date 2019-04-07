@@ -10,9 +10,6 @@ use Cake\Validation\Validator;
  * Chapters Model
  *
  * @property \App\Model\Table\ArticlesTable|\Cake\ORM\Association\BelongsTo $Articles
- * @property \App\Model\Table\ChaptersTable|\Cake\ORM\Association\BelongsTo $Chapters
- * @property \App\Model\Table\ImagesTable|\Cake\ORM\Association\BelongsTo $Images
- * @property \App\Model\Table\ChaptersTable|\Cake\ORM\Association\HasMany $Chapters
  *
  * @method \App\Model\Entity\Chapter get($primaryKey, $options = [])
  * @method \App\Model\Entity\Chapter newEntity($data = null, array $options = [])
@@ -43,17 +40,6 @@ class ChaptersTable extends Table
             'foreignKey' => 'id',
             'joinType' => 'INNER'
         ]);
-//        $this->belongsTo('Chapters', [
-//            'foreignKey' => 'chapter_id',
-//            'joinType' => 'INNER'
-//        ]);
-//        $this->belongsTo('Images', [
-//            'foreignKey' => 'image_id',
-//            'joinType' => 'INNER'
-//        ]);
-//        $this->hasMany('Chapters', [
-//            'foreignKey' => 'chapter_id'
-//        ]);
     }
 
     /**
