@@ -47,9 +47,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>
+        <?= $this->Html->script('app.js') ?>
     </div>
     <footer>
-        <?= $this->Html->script('app.js') ?>
     </footer>
 </body>
 </html>
