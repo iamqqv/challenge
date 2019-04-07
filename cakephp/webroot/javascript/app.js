@@ -1,9 +1,5 @@
 // lightbox js code goes in here
-openModal() {
+function openModal() {
+    console.log('sers');
     document.getElementById('lightbox').style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-    document.getElementById('lightbox').style.display = "none";
 }

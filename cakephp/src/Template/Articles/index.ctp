@@ -37,7 +37,6 @@
                 <figure class="img-container">
                     <?= $this->Html->image($chapter->image_url, [
                         'class' => 'img',
-                        'onclick' => 'openModal()',
                         'alt' => 'chapter image'
                     ]) ?>
                     <figcaption
